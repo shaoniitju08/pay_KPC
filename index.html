@@ -381,7 +381,7 @@ function render(){
     ['যাতায়াত ভাতা', (()=>{const c=g>=11&&$('city').checked; return [c?300:0,c?300:0,c?300:0,c?600:0].map(tk)})()],
     ['মোবাইল ভাতা', [0,0,0, g>=6?150:500].map(tk)],
     ['শিক্ষা সহায়ক ভাতা', [0,1,2,3].map(()=>tk(Math.min(kids,2)*500))],
-    ['অন্যান্য', [0,1,2,3].map(()=>tk(+$('other').value||0))]
+    ['বিশেষ ভাতা(৩০%)', [0,1,2,3].map(()=>tk(+$('other').value||0))]
   ];
   $('bt').innerHTML =
     '<thead><tr><th class="lbl">খাত</th>' +
